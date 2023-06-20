@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+      <div class="row d-flex justify-content-center">
+          <div class="row card0">
+              <div class="card1 col-lg-8 col-md-7">
+                  <small>ostad.weather</small>
+                  <div class="text-center">
+                    <img class="image mt-5" src="https://www.freepnglogos.com/uploads/hot-air-balloon-png/balloonstormers-hot-air-balloon-rides-columbia-missouri-25.png" width="200" >
+                  </div>
+                  <div class="row px-3 mt-3 mb-3">
+                      <h1 id="temperature" class="large-font mr-3">10</h1><span >°C</span>
+                      <div class="d-flex flex-column mr-3">
+                          <h2 id="locationName" class="mt-3 mb-0 ml-3">Dhaka</h2>
+                          <small id="dateTime" class="ml-3">10:36 - Tuesday, 22 Oct '19</small>
+                      </div>
+                      <div class="d-flex flex-column text-center">
+                          <h3 id="weatherIcon" class="fa fa-sun-o mt-4"></h3>
+                          <small id="weatherDescription" class="">Sunny</small>
+                      </div>
+                  </div>
+              </div>
+              <div class="card2 col-lg-4 col-md-5">
+                  <div class="row px-3">
+                      <input type="text" id="locationInput" name="location" placeholder="Another location" class="mb-5 ">
+                      <div id="search" class="fa fa-search mb-5 mr-0 text-center"></div>
+                  </div>
+                  <div class="mr-5">
+                    <p>Weather Details</p>
+                    <div class="line mt-3"></div>
+                    <br>
+                    <div class="row px-3">
+                      <p class="light-text">Feels like</p>
+                      <p class="ml-auto" id="feelsLike">Unknown</p>
+                    </div>
+
+                    <div class="row px-3">
+                      <p class="light-text">Max Temperature</p>
+                      <p class="ml-auto" id="maxTemp">Unknown</p>
+                  </div>
+
+                    <div class="row px-3">
+                      <p class="light-text">Min Temperature</p>
+                      <p class="ml-auto" id="minTemp">Unknown</p>
+                    </div>
+                   
+                    <div class="row px-3">
+                        <p class="light-text">Pressure</p>
+                        <p class="ml-auto" id="pressure">Unknown</p>
+                    </div>
+
+                      <div class="row px-3">
+                        <p class="light-text">Condition</p>
+                        <p class="ml-auto" id="Conditon">Unknown</p>
+                    </div>
+
+                      <div class="row px-3">
+                        <p class="light-text">Humidity</p>
+                        <p class="ml-auto" id="humidity">0%</p>
+                      </div>
+
+                      <div class="row px-3">
+                        <p class="light-text">Wind</p>
+                        <p class="ml-auto" id="windSpeed">0</p><span>&nbsp;</span><span>km/h</span>
+                      </div>
+                     
+                      <div class="row px-3">
+                          <p class="light-text">Rain</p>
+                          <p class="ml-auto" id="rainfall">0mm</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+  </html>
